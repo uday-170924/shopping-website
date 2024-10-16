@@ -1,0 +1,51 @@
+/* Base styling */
+.discriptionbox {
+    margin: 120px 20px; /* Adjust margin for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between; /* Spread items evenly */
+    margin-top: 20px; /* Add some space between navigator and description */
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 48%; /* Make each box take up about half the width on smaller screens */
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 20px; /* Add margin between boxes */
+}
+
+.descriptionbox-nav-box.fade {
+    background: #fbfbfb;
+    color: #555;
+}
+
+.descriptionBox-description {
+    border: 1px solid #d0d0d0;
+    padding: 20px; /* Adjust padding for smaller screens */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .discriptionbox {
+        margin: 60px 10px; /* Adjust margin for smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        width: 100%; /* Make each box take full width on smaller screens */
+    }
+
+    .descriptionBox-description {
+        width: 100%;
+    }
+}
